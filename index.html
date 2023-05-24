@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Libro De Recetas</h1>
+    </header>
+    <main class="main">
+      <div class="list">
+        <button class="addRecipe">+ Añadir Nueva Receta</button>
+      </div>
+      <div class="ingredients">
+        <h2 class="TitleNameRecipe">Receta de 'Cómo ser Programador'</h2>
+        <div class="recipe">
+          <p class="information">Ingredientes:</p>
+          <div class="listIngredients">
+            "1 taza de paciencia<br />
+            2 cucharadas de curiosidad<br />
+            3 pizcas de lógica<br />
+            1 pizca de humor<br />
+            1 cucharadita de café (opcional, para mantenerse despierto)"
+          </div>
+          <p class="information">Pasos a seguir:</p>
+          <div class="steps">
+            1-En un ambiente tranquilo, mezcla la taza de paciencia con las 2
+            cucharadas de curiosidad. Esto ayudará a mantener la calma mientras
+            exploras el mundo de la programación.<br /><br />
+            2-Añade las 3 pizcas de lógica y revuelve bien. La lógica te
+            permitirá resolver problemas y encontrar soluciones eficientes.<br /><br />
+            3-Ahora es el momento de añadir la pizca de humor programático. ¡No
+            te olvides de reírte mientras escribes tu código! El humor es un
+            ingrediente clave para mantener el buen ánimo durante los desafíos
+            de la programación.
+            <br /><br />4-Opcionalmente, puedes agregar una cucharadita de café
+            para mantenerse despierto durante esas largas noches de
+            programación. ¡Pero recuerda, no abuses de la cafeína!
+            <br /><br />5-Mezcla todos los ingredientes con pasión y
+            determinación. La programación requiere práctica constante y
+            dedicación. <br /><br />6-Una vez que la mezcla esté lista, viértela
+            en tu editor de código favorito y comienza a escribir líneas de
+            código con entusiasmo. <br /><br />7-Deja reposar el código por un
+            tiempo y luego revisa el resultado. Asegúrate de que todo funcione
+            correctamente y de que tus ideas estén correctamente plasmadas.
+            <br /><br />8-¡Voilà! Has te has hecho tu programador. Compártelo
+            con otros programadores y diviértete mientras aprendes y creas cosas
+            sorprendentes.";
+          </div>
+        </div>
+      </div>
+      <form class="formulario">
+        <button class="close">X</button>
+        <label for="nameRecipe">Nombre Receta</label>
+        <input
+          type="text"
+          class="labelName"
+          placeholder="Escribe un nombre único para cada una de tus recetas"
+          name="name"
+          required
+        />
+        <label for="ingredients">Ingredientes</label>
+        <textarea
+          class="labelingredients"
+          name="recipe"
+          rows="4"
+          placeholder="Presiona enter cada vez que añadas un ingrediente, que luzca de esta manera...
+2 huevos
+1 Pan        
+1/5 leche "
+        ></textarea>
+        <label for="steps">Pasos a Seguir</label>
+        <textarea
+          class="labelSteps"
+          name="recipe"
+          rows="4"
+          placeholder="Presiona enter cada vez que termines una instrucción, que luzca de esta manera...
+Mezclar la harina con la leche
+Batir los Huevos"
+        ></textarea>
+        <input type="submit" class="add" value="Añadir" />
+      </form>
+    </main>
+    <script src="libroRecetas.js"></script>
+  </body>
+</html>
